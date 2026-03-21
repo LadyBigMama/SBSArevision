@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SBSA | Santa Barbara Flying Sites</title>
+  <meta name="description" content="Santa Barbara Soaring Association site guide for launches, landing zones, and local flying resources.">
+  <link rel="stylesheet" href="./styles.css">
+  <script>
+    (function() {
+      var url = new URL(window.location.href);
+      var legacyHash = url.hash === "#site-grid" || url.hash === "#page-top";
+      var hasNavTop = url.searchParams.has("navtop");
+
+      if (!legacyHash && !hasNavTop) {
+        return;
+      }
+
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+
+      url.hash = "";
+      url.searchParams.delete("navtop");
+      history.replaceState(null, "", url.pathname + (url.searchParams.toString() ? "?" + url.searchParams.toString() : ""));
+      window.scrollTo(0, 0);
+    }());
+  </script>
+  <script src="./site.js?v=20260320a" defer></script>
+</head>
+<body data-page="home">
+  <div id="page-top" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="./index.html">
+      <img src="./assets/sbsa-logo.webp" alt="SBSA logo">
+      <span>SBSA</span>
+    </a>
+    <nav class="topbar-nav">
+      <a href="./index.html#page-top">FLYING SITES</a>
+      <a href="./paragliding-pages-split/05-visiting-pilots.html">VISITING PILOTS</a>
+      <a href="https://sbsa.info/telegram/" target="_blank" rel="noreferrer noopener">TELEGRAM</a>
+      <a href="./weather.html">WEATHER</a>
+      <a href="./sb-hoedown.html">SB HOEDOWN</a>
+      <a href="#">SCHOOLS</a>
+      <a href="./paragliding-pages-split/05-visiting-pilots.html">MEMBERSHIP</a>
+      <a href="./paragliding-pages-split/05-visiting-pilots.html">WAIVER</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-mountains"></div>
+    <div class="hero-content">
+      <p class="hero-kicker">Santa Barbara Soaring Association</p>
+      <h1>Your Flying Adventure Awaits</h1>
+      <p>Please take the time prior to flying SB sites to regularly review the site guidelines along with the no landing zone map. These can change over time and it is important to review the latest updates. Please adhere to these guidelines and plan flights accordingly.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="site-section" id="site-grid">
+      <div class="section-header">
+        <h2>Primary Sites</h2>
+        <p>Main SBSA launch and landing locations.</p>
+      </div>
+      <div class="site-grid">
+        <article class="site-card">
+          <a class="site-image" href="./paragliding-pages-split/02-vor-first-student-mountain-flights-to-epic-xc.html">
+            <img src="./assets/site-placeholder.svg" alt="VOR photo placeholder">
+          </a>
+          <div class="site-body">
+            <p class="site-type">Primary Mountain</p>
+            <h3>VOR</h3>
+            <p>Main mountain launch for first mountain flights and XC.</p>
+            <p class="site-meta">Minimum: P2+</p>
+          </div>
+        </article>
+
+        <article class="site-card">
+          <a class="site-image" href="./paragliding-pages-split/01-the-t-at-the-san-marcos-preserve.html">
+            <img src="./assets/site-placeholder.svg" alt="The T site photo placeholder">
+          </a>
+          <div class="site-body">
+            <p class="site-type">Landing Zone</p>
+            <h3>The T at San Marcos Preserve</h3>
+            <p>Official landing site for VOR mountain flights.</p>
+            <p class="site-meta">Rating: P1 (supervised), P2+</p>
+          </div>
+        </article>
+
+        <article class="site-card">
+          <a class="site-image" href="./paragliding-pages-split/03-elings-flight-park.html">
+            <img src="./assets/elings-flight-park.jpg" alt="Elings Flight Park">
+          </a>
+          <div class="site-body">
+            <p class="site-type">Training Hill</p>
+            <h3>Elings Flight Park</h3>
+            <p>Training, ground handling, and school-supervised flying.</p>
+            <p class="site-meta">Rating: P1/H1 with instruction</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="site-section">
+      <div class="section-header">
+        <h2>Secondary sites for info only - unassociated with SBSA.<br>Not maintained by SBSA. Fly at your own risk.</h2>
+      </div>
+      <div class="site-grid">
+        <article class="site-card">
+          <a class="site-image" href="./paragliding-pages-split/04-parma.html">
+            <img src="./assets/site-placeholder.svg" alt="Parma photo placeholder">
+          </a>
+          <div class="site-body">
+            <p class="site-type">Landing Zone</p>
+            <h3>Parma</h3>
+            <p class="site-meta">Rating: P2 / H2</p>
+          </div>
+        </article>
+
+        <article class="site-card">
+          <a class="site-image" href="./paragliding-pages-split/11-east-beach-landing.html">
+            <img src="./assets/east-beach.jpg" alt="East Beach">
+          </a>
+          <div class="site-body">
+            <p class="site-type">Landing Zone</p>
+            <h3>East Beach</h3>
+            <p>Designated beach landing area inside Santa Barbara limits.</p>
+            <p class="site-meta">Rating: H4 / P4</p>
+          </div>
+        </article>
+
+        <article class="site-card">
+          <a class="site-image" href="./paragliding-pages-split/12-wilcox-douglas-family-preserve.html">
+            <img src="./assets/site-placeholder.svg" alt="Wilcox photo placeholder">
+          </a>
+          <div class="site-body">
+            <p class="site-type">Coastal Launch</p>
+            <h3>Wilcox / Douglas Preserve</h3>
+            <p>Coastal ridge soaring in the Douglas Preserve. Lots of dogs!</p>
+            <p class="site-meta">Rating: H4 / P4</p>
+          </div>
+        </article>
+
+        <article class="site-card">
+          <a class="site-image" href="./paragliding-pages-split/13-more-mesa.html">
+            <img src="./assets/site-placeholder.svg" alt="More Mesa photo placeholder">
+          </a>
+          <div class="site-body">
+            <p class="site-type">Coastal Soaring</p>
+            <h3>More Mesa</h3>
+            <p>Ridge Soaring within SB Airport Airspace.</p>
+            <p class="site-meta">Rating: P2+</p>
+          </div>
+        </article>
+
+        <article class="site-card">
+          <a class="site-image" href="./paragliding-pages-split/14-ej.html">
+            <img src="./assets/ej-launch.jpg" alt="EJ launch">
+          </a>
+          <div class="site-body">
+            <p class="site-type">Mountain launch</p>
+            <h3>EJ</h3>
+            <p>Primary Santa Barbara launch for thermal flying.</p>
+            <p class="site-meta">Minimum: P3 or supervised P2</p>
+          </div>
+        </article>
+
+        <article class="site-card">
+          <a class="site-image" href="./paragliding-pages-split/07-skyport-eliminator.html">
+            <img src="./assets/skyport-launch.jpg" alt="Skyport / Eliminator">
+          </a>
+          <div class="site-body">
+            <p class="site-type">Mountain Launch</p>
+            <h3>Skyport / Eliminator</h3>
+            <p>Lower launch protected from North winds.</p>
+            <p class="site-meta">Minimum: P3+ / H3+ (or supervised)</p>
+          </div>
+        </article>
+
+        <article class="site-card">
+          <a class="site-image" href="./paragliding-pages-split/08-marco-polo-toro-ridge.html">
+            <img src="./assets/site-placeholder.svg" alt="Marco Polo photo placeholder">
+          </a>
+          <div class="site-body">
+            <p class="site-type">Secondary / Unaffiliated</p>
+            <h3>Marco Polo - Toro Ridge</h3>
+            <p>Thermal and ridge option in Carpinteria.</p>
+            <p class="site-meta">Rating: P2 (with instructor) or P3+</p>
+          </div>
+        </article>
+
+        <article class="site-card">
+          <a class="site-image" href="./paragliding-pages-split/09-bates.html">
+            <img src="./assets/bates-launch.jpg" alt="Bates launch">
+          </a>
+          <div class="site-body">
+            <p class="site-type">Secondary Ridge</p>
+            <h3>Bates</h3>
+            <p>Carpinteria coastal ridge soaring site for all levels.</p>
+            <p class="site-meta">Rating: P2 / H2</p>
+          </div>
+        </article>
+
+        <article class="site-card">
+          <a class="site-image" href="./paragliding-pages-split/06-jays-knob.html">
+            <img src="./assets/jays-knob.jpg" alt="Jay's Knob">
+          </a>
+          <div class="site-body">
+            <p class="site-type">Secondary / Unaffiliated</p>
+            <h3>Jay's Knob</h3>
+            <p>Occasional experienced-pilot site in stronger SE setups.</p>
+            <p class="site-meta">Rating: P4</p>
+          </div>
+        </article>
+
+        <article class="site-card">
+          <a class="site-image" href="./paragliding-pages-split/15-pine-mountain.html">
+            <img src="./assets/pine-mountain.jpg" alt="Pine Mountain">
+          </a>
+          <div class="site-body">
+            <p class="site-type">Secondary / Unaffiliated</p>
+            <h3>Pine Mountain</h3>
+            <p>Secondary mountain site. Details pending.</p>
+            <p class="site-meta">Info only</p>
+          </div>
+        </article>
+
+        <article class="site-card">
+          <a class="site-image" href="./paragliding-pages-split/16-the-nuthouse.html">
+            <img src="./assets/site-placeholder.svg" alt="The Nuthouse photo placeholder">
+          </a>
+          <div class="site-body">
+            <p class="site-type">Secondary / Unaffiliated</p>
+            <h3>The Nuthouse</h3>
+            <p>Ojai thermal flying site. Details pending.</p>
+            <p class="site-meta">Info only</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Santa Barbara Soaring Association</p>
+    <p>Site guides for local pilots and visitors.</p>
+  </footer>
+</body>
+</html>
