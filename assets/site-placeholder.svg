@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Site photo placeholder">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8fd3ff"/>
+      <stop offset="100%" stop-color="#2f80b7"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#295763"/>
+      <stop offset="100%" stop-color="#16323a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g1)"/>
+  <circle cx="940" cy="150" r="62" fill="#dff4ff" opacity="0.95"/>
+  <path d="M0 470 L250 290 L420 430 L580 250 L760 410 L900 280 L1200 470 L1200 675 L0 675 Z" fill="#2b5d60"/>
+  <path d="M0 530 L220 360 L400 500 L560 340 L760 520 L970 350 L1200 520 L1200 675 L0 675 Z" fill="url(#g2)"/>
+  <g fill="#f0fbff" font-family="Avenir Next, Trebuchet MS, sans-serif" text-anchor="middle">
+    <text x="600" y="318" font-size="48" font-weight="700">Add Site Photo</text>
+    <text x="600" y="356" font-size="24" opacity="0.9">Replace this image anytime</text>
+  </g>
+</svg>
